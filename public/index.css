@@ -1,0 +1,325 @@
+:root {
+  --bord: 10px;
+  --padd: 10px;
+  --mar: 10px;
+  --prim: rgb(241, 131, 131);
+  --sec: rgb(60, 255, 0);
+  --bgcol: rgb(182, 180, 180);
+  ---scale: 1.05;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition-duration: 300ms;
+}
+body {
+  background-color: var(--bgcol);
+  overscroll-behavior: none;
+  height: 100vh;
+  width: 100vw;
+  font-size: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  background-color: var(--prim);
+  border-radius: var(--bord);
+  font-size: 150%;
+  padding: var(--padd);
+  border: none;
+  width: 20vw;
+}
+.button:hover,
+.soc:hover {
+  scale: var(---scale);
+}
+.button:active,
+.soc:active {
+  scale: 1;
+}
+
+#header {
+  height: 10vh;
+  background-color: var(--prim);
+  justify-content: space-between;
+  padding: 1vh 3vw;
+}
+#mainbody {
+  height: 80vh;
+  justify-content: space-evenly;
+}
+#footer {
+  height: 10vh;
+  background-color: var(--prim);
+}
+
+#centerbtnbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#heading {
+  font-size: 130%;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.logoimg {
+  width: 5vw;
+  aspect-ratio: 1/1;
+}
+
+#heroImg {
+  height: 50%;
+  width: 80%;
+  background-color: aqua;
+  background-image: url("/public/res/img1.webp");
+  background-size: cover;
+  font-size: 200%;
+  font-weight: bolder;
+  font-style: oblique;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: var(--bord);
+}
+#herotext {
+  text-shadow: 5px 4px 11px rgb(255, 0, 0);
+  padding: var(--padd);
+}
+#btnrow {
+  height: 10%;
+}
+#quotesbox {
+  height: 30%;
+  width: 90%;
+  background-color: rgb(3, 37, 46);
+  border-radius: var(--bord);
+  color: white;
+  font-size: 170%;
+  font-weight: 600;
+  text-align: center;
+  padding: var(--padd);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.soc {
+  padding: var(--padd);
+  border-radius: 50%;
+  user-select: none;
+  width: 50%;
+}
+
+.socialbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+#terms {
+  width: 45%;
+}
+#icons {
+  width: 45%;
+}
+.soc img {
+  width: 50px;
+  height: 50px;
+}
+.iconname {
+  font-size: 50%;
+  font-weight: bold;
+}
+#quotes {
+  transition: opacity 1s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+#icontext {
+  font-weight: bold;
+}
+#iconrow {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+#terms a {
+  color: rgb(13, 172, 172);
+  text-decoration: none;
+}
+
+.donatecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  margin: 4vh 0px;
+  width: 80%;
+  height: 75%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#detailscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  width: 80%;
+  height: 75%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2vh;
+}
+
+label {
+  display: flex;
+  width: 35%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+  font-size: large;
+  width: clamp(400px, 40%, 700px);
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .form-group {
+    flex-direction: column;
+  }
+  .donatecontainer {
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+  }
+  #detailscontainer {
+    width: 95%;
+  }
+
+  .logoimg {
+    width: 5vh;
+    aspect-ratio: 1/1;
+  }
+
+  #heroImg {
+    height: 50%;
+    width: 95%;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    background-color: #ccc;
+  }
+
+  .button {
+    background-color: #8a0a0a;
+    border-radius: var(--bord);
+    font-size: 20px;
+    padding: var(--padd);
+    width: 40vw;
+  }
+
+  #footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  #terms {
+    width: 95%;
+  }
+  #icons {
+    flex-direction: column;
+    width: 95%;
+  }
+  #iconrow {
+    width: 100%;
+  }
+
+  .soc img {
+    width: 30px;
+    height: 30px;
+  }
+  #quotesbox {
+    font-size: 100%;
+  }
+  #donationForm {
+    width: 95%;
+  }
+  .form-group {
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+  }
+}

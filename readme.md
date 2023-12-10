@@ -5,7 +5,9 @@
 1. Clone the repository
 2. Run `npm install` to install all the dependencies
 3. Run `npm build` to start the server
-4. open `localhost:5500/` in your browser
+4. install firebase with `npm install firebase`
+5. install firebase tools with `npm install -g firebase-tools`
+6. open `localhost:5500/` in your browser
 
 ### About the project
 * This is a blood donation app where you can register yourself as a donor and can also search for donors in your area.
