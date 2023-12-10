@@ -187,3 +187,8 @@ a{
     display: flex;
     flex-direction: row;
   }
+
+  #terms a {
+    color:rgb(13, 172, 172);
+    text-decoration: none;
+  }
