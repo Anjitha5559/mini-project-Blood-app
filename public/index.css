@@ -209,7 +209,7 @@ a {
   align-items: center;
   overflow: scroll;
   width: 80%;
-  height: 75%;
+  height: 25%;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -231,6 +231,30 @@ label {
   width: 35%;
 }
 
+.userdetailbox {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: var(--bord);
+  background-color: aqua;
+  margin: 2vw;
+}
+
+#users{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2vh;
+  height: 50vh;
+  overflow: scroll;
+}
+
+.author {
+  display: block;
+  text-align:right;
+  color: cyan;
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
@@ -245,6 +269,15 @@ textarea {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.userbtn {
+  background-color: var(--prim);
+  border-radius: var(--bord);
+  font-size: 110%;
+  padding:4px;
+  border: none;
+  margin: 5px;
 }
 
 @media screen and (max-width: 500px) {
