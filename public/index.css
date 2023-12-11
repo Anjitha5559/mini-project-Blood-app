@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .row {
   width: 100%;
@@ -65,8 +66,10 @@ body {
   justify-content: space-evenly;
 }
 #footer {
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f8f9fa;
   height: 10vh;
-  background-color: var(--prim);
 }
 
 #centerbtnbox {
@@ -145,12 +148,7 @@ a {
   text-decoration: none;
 }
 
-#footer {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f8f9fa;
-}
+
 #terms {
   width: 45%;
 }
@@ -194,11 +192,11 @@ a {
   flex-direction: column;
   align-items: center;
   overflow: scroll;
-  margin: 4vh 0px;
+  margin: 1vh 0px;
   width: 80%;
-  height: 75%;
+  height: 70%;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -206,12 +204,13 @@ a {
 #detailscontainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   overflow: scroll;
   width: 80%;
-  height: 25%;
+  height: 20%;
   background-color: #fff;
-  padding: 20px;
+  margin: 10px;
   border-radius: 5px;
 }
 
@@ -222,6 +221,7 @@ h1 {
 .form-group {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   width: 100%;
   margin: 2vh;
 }
@@ -236,8 +236,9 @@ label {
   flex-direction: column;
   padding: 15px;
   border-radius: var(--bord);
-  background-color: aqua;
+  background-color: rgb(43, 43, 43);
   margin: 2vw;
+  color: #fff;
 }
 
 #users{
@@ -245,14 +246,17 @@ label {
   flex-direction: row;
   width: 100%;
   margin: 2vh;
-  height: 50vh;
+  height: 55%;
   overflow: scroll;
 }
 
 .author {
   display: block;
   text-align:right;
-  color: cyan;
+  color: rgb(31, 100, 100);
+}
+.spacebetween {
+  justify-content: space-between;
 }
 
 input[type="text"],

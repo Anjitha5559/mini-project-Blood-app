@@ -149,13 +149,12 @@ function renderUsers(users) {
     const div = document.createElement('div');
     div.className = 'donateuser';
     div.innerHTML = `<div class= "userdetailbox">
-      <div class="donateuserdetail name">${user.name} ${user.lastName}</div>
-      <div class="donateuserdetail bloodgroup">${user.bloodGroup}</div>
-      <div class="donateuserdetail location">${user.location}</div>
+      <div class="donateuserdetail name">Name: ${user.name} ${user.lastName}</div>
+      <div class="donateuserdetail bloodgroup">Blood Group: ${user.bloodGroup}</div>
        <div class="donateuserdetail history">History: ${user.history}</div>
       <div class="donateuserdetail message"> user msg: ${user.msg}</div>
-      <div class="donateuserdetail userbtn contactnumber"><a href="tel:${user.phone}">${user.phone}</a></div>
-      <div class="donateuserdetail userbtn email"><a href="mailto:${user.email}">${user.email}</a></div>
+      <div class="donateuserdetail userbtn contactnumber"><a href="tel:${user.phone}">Phone</a></div>
+      <div class="donateuserdetail userbtn email"><a href="mailto:${user.email}">Email</a></div>
     </div>`;
     usersDiv.appendChild(div);
   });

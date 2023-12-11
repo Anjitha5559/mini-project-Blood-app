@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blood Donation</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="'favicon" href="./res/logo.png" type="image/x-icon" />
-    <script src="./dist/index.js" defer></script>
-  </head>
 
-  <body>
-    <div id="header" class="row">
-      <div id="logo">
-        <img class="logoimg" src="./res/logo.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Donation</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="'favicon" href="./res/logo.png" type="image/x-icon" />
+  <script src="./dist/index.js" defer></script>
+</head>
+
+<body>
+  <div id="header" class="row">
+    <div id="logo">
+      <img class="logoimg" src="./res/logo.png" alt="logo" />
+    </div>
+    <div id="heading">Blood-HUB</div>
+    <div id="aboutUS">
+      <img class="logoimg" src="./res/Network.ico" alt="logo" />
+    </div>
+  </div>
+
+
+
+  <div id="mainbody">
+    <div id="detailscontainer">
+      <div class="form-group">
+        <label for="bloodGroupFilter">Select Blood Group:</label>
+        <select id="bloodGroupFilter">
+          <option value="A+">A+</option>
+          <option value="A-"> A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
       </div>
-      <div id="heading">Blood-HUB</div>
-      <div id="aboutUS">
-        <img class="logoimg" src="./res/Network.ico" alt="logo" />
+      <div class="form-group">
+        <label for="locationFilter">Select Location:</label>
+        <select id="locationFilter">
+        </select>
       </div>
     </div>
+    <div id="users"></div>
+  </div>
 
-       
-       
-       
-       <div id="detailscontainer">
-            <h2>Blood Details</h2>
-            <label for="bloodGroupFilter">Select Blood Group:</label>
-            <select id="bloodGroupFilter" class="button">
-                <option value="A+">A+</option>
-                <option value="A-"> A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-            </select>
-            
-            <label for="locationFilter">Select Location:</label>
-            <select id="locationFilter" class="button">
-            </select>
-        </div>
-        <div id="users"></div>
+  <div id="footer" class="row">
+    <div id="terms">
+      A webapp made with <span style="color: red"> &#9829; </span> and html.
+      <br />
+      you can grab the source code at
+      <a href="https://github.com/Anjitha5559/mini-project-Blood-app">Github</a>
     </div>
+    <div id="icons" class="row">
+      <div id="icontext">Connect With Us</div>
+      <div id="iconrow"></div>
+    </div>
+  </div>
+</body>
 
-    <div id="footer" class="row">
-        <div id="terms">
-          A webapp made with <span style="color: red"> &#9829; </span> and html.
-          <br />
-          you can grab the source code at
-          <a href="https://github.com/Anjitha5559/mini-project-Blood-app"
-            >Github</a
-          >
-        </div>
-        <div id="icons" class="row">
-          <div id="icontext">Connect With Us</div>
-          <div id="iconrow"></div>
-        </div>
-      </div>
-    </body>
-  </html>
-  
-
-
-    
+</html>

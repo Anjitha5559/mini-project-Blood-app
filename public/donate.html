@@ -8,7 +8,8 @@
     <link rel="'favicon" href="./res/logo.png" type="image/x-icon" />
   </head>
 
-  <body class="column">
+  <body class="column spacebetween">
+
     <div id="header" class="row">
       <div id="logo">
         <img class="logoimg" src="./res/logo.png" alt="logo" />
@@ -18,10 +19,10 @@
         <img class="logoimg" src="./res/Network.ico" alt="logo" />
       </div>
     </div>
-
+<div id="mainbody">
     <div class="donatecontainer">
       <h1>Donate Blood</h1>
-      <div id="donationForm" action="/submit_donation" method="POST">
+      <div id="donationForm">
         <div class="form-group">
           <label for="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" required />
@@ -73,7 +74,7 @@
         </div>
       </div>
     </div>
-
+</div>
     <div id="footer" class="row">
       <div id="terms">
         A webapp made with <span style="color: red"> &#9829; </span> and html.
@@ -88,6 +89,7 @@
         <div id="iconrow"></div>
       </div>
     </div>
+
   </body>
   <script src="./dist/index.js" defer></script>
 </html>
