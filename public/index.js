@@ -231,7 +231,9 @@ function setuserdatatofirebase(userdata) {
       alert('User already exists');
       return;
     }
+
     set(ref(db, 'users/' + uniqueidd), userdata);
+    alert('Your data has been submitted successfully');
   });
 }
 
