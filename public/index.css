@@ -2,7 +2,7 @@
   --bord: 10px;
   --padd: 10px;
   --mar: 10px;
-  --prim: rgb(0, 105, 243);
+  --prim: rgb(0, 255, 85);
   --sec: rgb(68, 1, 88);
   --bgcol: rgb(43, 43, 43);
   ---scale: 1.05;
@@ -28,10 +28,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.button, .soc {
+.button,
+.soc {
   font-size: 1em;
   border: none;
-  border-radius:var(--bord);
+  border-radius: var(--bord);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -49,7 +50,6 @@
   scale: 1;
 }
 
-
 body {
   background-color: var(--bgcol);
   overscroll-behavior: none;
@@ -57,8 +57,6 @@ body {
   width: 100vw;
   font-size: 150%;
 }
-
-
 
 #header {
   height: 10vh;
@@ -154,7 +152,6 @@ a {
   text-decoration: none;
 }
 
-
 #terms {
   width: 45%;
 }
@@ -194,15 +191,12 @@ a {
   text-decoration: none;
 }
 
-
-#donationForm{
+#donationForm {
   background-color: #fff;
   width: 80%;
   border-radius: var(--bord);
   padding: var(--padd);
-
 }
-
 
 .donatecontainer {
   display: flex;
@@ -242,7 +236,7 @@ label {
   width: 35%;
 }
 
-#aboutUS:hover::after{
+#aboutUS:hover::after {
   content: "This web app is dedicated to assisting people in need of blood to sustain life. Crafted using HTML, CSS, and JS, this project is a collaborative effort by Anjitha, Navaneeth, and Akarsh, ECE students from GEC TSR.";
   color: #fff;
   background-color: #000;
@@ -253,7 +247,7 @@ label {
   top: 9vh;
   left: 38vw;
   z-index: 1;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .userdetailbox {
@@ -266,7 +260,7 @@ label {
   color: #fff;
 }
 
-#users{
+#users {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -277,7 +271,7 @@ label {
 
 .author {
   display: block;
-  text-align:right;
+  text-align: right;
   color: rgb(31, 100, 100);
 }
 .spacebetween {
@@ -294,13 +288,11 @@ textarea {
   border-radius: 5px;
   border: 1px solid #ccc;
   outline: none;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   line-height: 1.5;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
-
-
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -310,7 +302,7 @@ textarea {
   background-color: var(--prim);
   border-radius: var(--bord);
   font-size: 110%;
-  padding:4px;
+  padding: 4px;
   border: none;
   margin: 5px;
   text-align: center;
@@ -339,6 +331,9 @@ textarea {
     height: 50%;
     width: 95%;
   }
+  #header {
+    height: 17vh;
+  }
 
   label {
     width: 100%;
@@ -365,9 +360,11 @@ textarea {
     flex-direction: column;
     height: auto;
     text-align: center;
+    height: 280px;
   }
   #terms {
     width: 95%;
+    font-size: 100%;
   }
   #icons {
     flex-direction: column;
