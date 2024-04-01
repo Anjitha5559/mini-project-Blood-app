@@ -13,7 +13,7 @@ const firebaseConfig = {
 };
 
 let cities = [
-    "Eranakulam", "palakkad", "Thrissur", "Kozhikode", "Kannur", "Kasaragod", "Malappuram", "Kollam", "Thiruvananthapuram", "Alappuzha", "Idukki", "Pathanamthitta", "Kottayam", "Wayanad", "Others"
+  "Eranakulam", "Palakkad", "Thrissur", "Kozhikode", "Kannur", "Kasaragod", "Malappuram", "Kollam", "Thiruvananthapuram", "Alappuzha", "Idukki", "Pathanamthitta", "Kottayam", "Wayanad", "Others"
 ]
 
 const socials = [
@@ -25,10 +25,6 @@ const socials = [
 ];
 
 const quotesAndFacts = [
-  {
-    "quote": "The blood you donate gives someone another chance at life. One day that someone may be a close relative, a friend, a loved one—or even you.",
-    "author": "Unknown"
-  },
   {
     "quote": "To give blood, you need neither extra strength nor extra food, and you will save a life.",
     "author": "Unknown"
@@ -98,10 +94,6 @@ const quotesAndFacts = [
     "author": "Unknown"
   },
   {
-    "quote": "To the young and healthy, it's no loss. To sick, it's hope of life. Donate blood to give back life.",
-    "author": "Unknown"
-  },
-  {
     "quote": "Donating blood is a tangible way to support your community and save lives.",
     "author": "Unknown"
   }
@@ -127,13 +119,13 @@ if (form) {
 }
 
 if (locationFilter && bloodGroupFilter) {
-     locationFilter.addEventListener('change', function() {
-       searchusers();
-      } );
-     bloodGroupFilter.addEventListener('change', function() {
-      searchusers();
-     } );
-     cities.forEach(city => {
+  locationFilter.addEventListener('change', function () {
+    searchusers();
+  });
+  bloodGroupFilter.addEventListener('change', function () {
+    searchusers();
+  });
+  cities.forEach(city => {
     const option = document.createElement('option');
     option.value = city;
     option.innerHTML = city;
@@ -196,21 +188,21 @@ function validateAndCreateObject() {
 
 
 function searchusers() {
-    const location   = document.getElementById('locationFilter').value;
-    const bloodGroup = document.getElementById('bloodGroupFilter').value;
-    console.log(location, bloodGroup);
-    const users = ref(db, 'users');
-    const filteredUsers = [];
-    get(users).then((snapshot) => {
-      snapshot.forEach((childSnapshot) => {
-        const childData = childSnapshot.val();
-        if (childData.location === location && childData.bloodGroup === bloodGroup) {
-          filteredUsers.push(childData);
-        }
-      });
-      renderUsers(filteredUsers);
+  const location = document.getElementById('locationFilter').value;
+  const bloodGroup = document.getElementById('bloodGroupFilter').value;
+  console.log(location, bloodGroup);
+  const users = ref(db, 'users');
+  const filteredUsers = [];
+  get(users).then((snapshot) => {
+    snapshot.forEach((childSnapshot) => {
+      const childData = childSnapshot.val();
+      if (childData.location === location && childData.bloodGroup === bloodGroup) {
+        filteredUsers.push(childData);
+      }
     });
-  }
+    renderUsers(filteredUsers);
+  });
+}
 
 
 function setuserdatatofirebase(userdata) {
