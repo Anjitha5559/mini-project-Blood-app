@@ -99,7 +99,7 @@ body {
   height: 50%;
   width: 80%;
   background-color: aqua;
-  background-image: url("/public/res/img1.webp");
+  /* background-image: url("/public/res/img1.webp"); */
   background-size: cover;
   font-size: 200%;
   font-weight: bolder;
